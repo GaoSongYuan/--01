@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+//<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
+
+//@property(nonatomic,strong) UICollectionView *collectionView;
 
 @end
 

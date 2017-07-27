@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shop" id="gTV-IL-0wX" customClass="ShopCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-yw-a0r">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="163"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73d-PP-b7A">
+                        <rect key="frame" x="46.5" y="143" width="47" height="20"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vxh-J9-6Rc"/>
+                        </constraints>
+                        <state key="normal" image="discuss"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhc-8T-uFB">
+                        <rect key="frame" x="0.0" y="143" width="46.5" height="20"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="6zt-x1-RC6"/>
+                        </constraints>
+                        <state key="normal" image="like"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QO6-Sc-wNM">
+                        <rect key="frame" x="93.5" y="143" width="46.5" height="20"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eq1-Qb-CtC"/>
+                        </constraints>
+                        <state key="normal" image="dianzan"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICP-MG-JmT">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="143"/>
+                        <connections>
+                            <action selector="test:" destination="gTV-IL-0wX" eventType="touchUpInside" id="LXx-6u-9MS"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ICP-MG-JmT" secondAttribute="trailing" id="1fQ-wK-sCy"/>
+                <constraint firstItem="ICP-MG-JmT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3Q3-sX-tc0"/>
+                <constraint firstAttribute="bottom" secondItem="nhc-8T-uFB" secondAttribute="bottom" id="3hf-sm-UNi"/>
+                <constraint firstAttribute="trailing" secondItem="IlP-yw-a0r" secondAttribute="trailing" id="5M2-JH-TWu"/>
+                <constraint firstAttribute="bottom" secondItem="73d-PP-b7A" secondAttribute="bottom" id="EeL-fs-WZg"/>
+                <constraint firstAttribute="trailing" secondItem="QO6-Sc-wNM" secondAttribute="trailing" id="GRo-8l-a9V"/>
+                <constraint firstItem="IlP-yw-a0r" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hyj-zs-UO7"/>
+                <constraint firstAttribute="bottom" secondItem="IlP-yw-a0r" secondAttribute="bottom" id="K1d-FV-wtU"/>
+                <constraint firstItem="IlP-yw-a0r" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MPr-Pl-0fg"/>
+                <constraint firstItem="QO6-Sc-wNM" firstAttribute="width" secondItem="nhc-8T-uFB" secondAttribute="width" id="XOb-Ng-YTw"/>
+                <constraint firstItem="nhc-8T-uFB" firstAttribute="top" secondItem="ICP-MG-JmT" secondAttribute="bottom" id="Xfn-Qn-EEL"/>
+                <constraint firstItem="nhc-8T-uFB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hVK-Gm-Qra"/>
+                <constraint firstItem="QO6-Sc-wNM" firstAttribute="leading" secondItem="73d-PP-b7A" secondAttribute="trailing" id="mvQ-Ti-kqN"/>
+                <constraint firstAttribute="bottom" secondItem="QO6-Sc-wNM" secondAttribute="bottom" id="oKR-j9-4TS"/>
+                <constraint firstItem="ICP-MG-JmT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rcs-gx-kur"/>
+                <constraint firstItem="73d-PP-b7A" firstAttribute="leading" secondItem="nhc-8T-uFB" secondAttribute="trailing" id="u8g-ax-Qt9"/>
+                <constraint firstItem="73d-PP-b7A" firstAttribute="width" secondItem="nhc-8T-uFB" secondAttribute="width" id="z1X-ca-coN"/>
+            </constraints>
+            <size key="customSize" width="140" height="163"/>
+            <connections>
+                <outlet property="image" destination="IlP-yw-a0r" id="aog-qO-wMx"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="251.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dianzan" width="20" height="20"/>
+        <image name="discuss" width="20" height="20"/>
+        <image name="like" width="20" height="20"/>
+    </resources>
+</document>
