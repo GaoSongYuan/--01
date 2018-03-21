@@ -82,6 +82,10 @@
 		E44F35271F22F61600829AFD /* GSYSellController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F35261F22F61600829AFD /* GSYSellController.m */; };
 		E44F352A1F22F62E00829AFD /* GSYSellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F35291F22F62E00829AFD /* GSYSellModel.m */; };
 		E44F352C1F22F84A00829AFD /* sell.plist in Resources */ = {isa = PBXBuildFile; fileRef = E44F352B1F22F84A00829AFD /* sell.plist */; };
+		E45B34771F29C26C001A4522 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45B34761F29C26C001A4522 /* Launch Screen.storyboard */; };
+		E45B347B1F29C3AB001A4522 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = E45B347A1F29C3AB001A4522 /* first.png */; };
+		E46570BE1F298827001C6478 /* GSYSendXibController.m in Sources */ = {isa = PBXBuildFile; fileRef = E46570BC1F298827001C6478 /* GSYSendXibController.m */; };
+		E46570BF1F298827001C6478 /* GSYSendXibController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E46570BD1F298827001C6478 /* GSYSendXibController.xib */; };
 		E4F779FF1EFE2E920074015F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F779FE1EFE2E920074015F /* main.m */; };
 		E4F77A021EFE2E920074015F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F77A011EFE2E920074015F /* AppDelegate.m */; };
 		E4F77A051EFE2E920074015F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F77A041EFE2E920074015F /* ViewController.m */; };
@@ -254,6 +258,11 @@
 		E44F35281F22F62E00829AFD /* GSYSellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSYSellModel.h; sourceTree = "<group>"; };
 		E44F35291F22F62E00829AFD /* GSYSellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSYSellModel.m; sourceTree = "<group>"; };
 		E44F352B1F22F84A00829AFD /* sell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sell.plist; sourceTree = "<group>"; };
+		E45B34761F29C26C001A4522 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E45B347A1F29C3AB001A4522 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		E46570BB1F298827001C6478 /* GSYSendXibController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSYSendXibController.h; sourceTree = "<group>"; };
+		E46570BC1F298827001C6478 /* GSYSendXibController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSYSendXibController.m; sourceTree = "<group>"; };
+		E46570BD1F298827001C6478 /* GSYSendXibController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GSYSendXibController.xib; sourceTree = "<group>"; };
 		E4F779FA1EFE2E920074015F /* 示论说-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "示论说-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F779FE1EFE2E920074015F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4F77A001EFE2E920074015F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -300,6 +309,7 @@
 		E4104FE31F1DBA5F00056194 /* sendMessage */ = {
 			isa = PBXGroup;
 			children = (
+				E46570BA1F2987E1001C6478 /* xibSend */,
 				E4458DB11F28A89E00D5EE96 /* controllerNew */,
 				E4104FE41F1DBA7300056194 /* c */,
 			);
@@ -685,6 +695,16 @@
 			name = m;
 			sourceTree = "<group>";
 		};
+		E46570BA1F2987E1001C6478 /* xibSend */ = {
+			isa = PBXGroup;
+			children = (
+				E46570BB1F298827001C6478 /* GSYSendXibController.h */,
+				E46570BC1F298827001C6478 /* GSYSendXibController.m */,
+				E46570BD1F298827001C6478 /* GSYSendXibController.xib */,
+			);
+			name = xibSend;
+			sourceTree = "<group>";
+		};
 		E4F779F11EFE2E920074015F = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +745,8 @@
 				E4458DA71F27126F00D5EE96 /* TestViewController1.h */,
 				E4458DA81F27126F00D5EE96 /* TestViewController1.m */,
 				E4458DA91F27126F00D5EE96 /* TestViewController1.xib */,
+				E45B347A1F29C3AB001A4522 /* first.png */,
+				E45B34761F29C26C001A4522 /* Launch Screen.storyboard */,
 			);
 			path = "示论说-01";
 			sourceTree = "<group>";
@@ -870,8 +892,11 @@
 				E43E9C561F19E91000C867F7 /* 1.plist in Resources */,
 				E4F77A0D1EFE2E920074015F /* LaunchScreen.storyboard in Resources */,
 				E44F35241F22F5CD00829AFD /* GSYSellCell.xib in Resources */,
+				E46570BF1F298827001C6478 /* GSYSendXibController.xib in Resources */,
+				E45B34771F29C26C001A4522 /* Launch Screen.storyboard in Resources */,
 				E43E9C5D1F1AFD0500C867F7 /* 2.plist in Resources */,
 				E4F77A0A1EFE2E920074015F /* Assets.xcassets in Resources */,
+				E45B347B1F29C3AB001A4522 /* first.png in Resources */,
 				E4458DB61F28A8EB00D5EE96 /* GSYJiaHaoController.xib in Resources */,
 				E4458DAB1F27126F00D5EE96 /* TestViewController1.xib in Resources */,
 				E44F352C1F22F84A00829AFD /* sell.plist in Resources */,
@@ -958,6 +983,7 @@
 				E43E9C791F1B3C8C00C867F7 /* GSYTableViewCell.m in Sources */,
 				E43E9C311F19E8C100C867F7 /* MJRefreshAutoStateFooter.m in Sources */,
 				E43E9C281F19E8C100C867F7 /* NSObject+MJKeyValue.m in Sources */,
+				E46570BE1F298827001C6478 /* GSYSendXibController.m in Sources */,
 				E43E9C371F19E8C100C867F7 /* MJRefreshStateHeader.m in Sources */,
 				E43E9C351F19E8C100C867F7 /* MJRefreshGifHeader.m in Sources */,
 				E43E9C3A1F19E8C100C867F7 /* UIScrollView+MJExtension.m in Sources */,

@@ -79,11 +79,19 @@
     // 给cell传递模型
     cell.model = self.sells[indexPath.row];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone; // 点击效果消失
+    
     // 返回cell
     return cell;
 }
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
+
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//}
+
+//-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+//}
 
 @end
