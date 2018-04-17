@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShopModel : NSObject
+@property (nonatomic,copy) NSString *word;
 @property (nonatomic, assign) CGFloat w;
 @property (nonatomic, assign) CGFloat h;
 @property (nonatomic, copy) NSString *img;

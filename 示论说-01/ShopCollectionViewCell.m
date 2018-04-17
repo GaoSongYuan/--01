@@ -12,7 +12,8 @@
 
 //#import "GSYJiaHaoController.h"
 #import "ViewController.h"
-#import "TestViewController1.h"
+//#import "TestViewController1.h"
+#import "waterClickViewController.h"
 
 @interface ShopCollectionViewCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *image;
@@ -49,7 +50,9 @@
     
     NSLog(@"%@",self.shop.img);
     
-    TestViewController1 *vc = [[TestViewController1 alloc] init];
+    waterClickViewController *vc = [[waterClickViewController alloc] init];
+    vc.imgURL = self.shop.img; // 图片url传给跳转到的界面
+    vc.words = self.shop.word;
     
     [self.viewCon presentViewController:vc animated:YES completion:nil];
     

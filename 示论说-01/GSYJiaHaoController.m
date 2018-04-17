@@ -152,20 +152,20 @@
 
 - (IBAction)btn2:(id)sender {
     NSLog(@"相册");
-    TestViewController1 *vc = [[TestViewController1 alloc] init];
-    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
+//    TestViewController1 *vc = [[TestViewController1 alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
 }
 
 - (IBAction)btn3:(id)sender {
     NSLog(@"拍摄");
-    TestViewController1 *vc = [[TestViewController1 alloc] init];
-    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
+//    TestViewController1 *vc = [[TestViewController1 alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
 }
 
 - (IBAction)btn4:(id)sender {
     NSLog(@"签到");
-    TestViewController1 *vc = [[TestViewController1 alloc] init];
-    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
+//    TestViewController1 *vc = [[TestViewController1 alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil]; // 用TestViewController1 中的 back 返回即可
 }
 
 @end

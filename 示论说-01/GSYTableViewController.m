@@ -14,7 +14,7 @@
 
 #import "GSYTabBarController.h"
 
-#import "TestViewController1.h"
+//#import "TestViewController1.h"
 
 @interface GSYTableViewController ()
 
@@ -65,16 +65,16 @@
     if (_data == nil) {
         _data = [NSMutableArray array];
         
-        GSYTableViewModel *item00 = [GSYTableViewModel tableWithIcon:@"dianping" title:@"作品点评" details:nil vcClass:[TestViewController1 class]];  // 有箭头
-        GSYTableViewModel *item01 = [GSYTableViewModel tableWithIcon:@"xihuanzan" title:@"喜欢和赞" details:nil vcClass:[TestViewController1 class]];
+        GSYTableViewModel *item00 = [GSYTableViewModel tableWithIcon:@"dianping" title:@"作品点评" details:nil vcClass:nil];  // 有箭头
+        GSYTableViewModel *item01 = [GSYTableViewModel tableWithIcon:@"xihuanzan" title:@"喜欢和赞" details:nil vcClass:nil];
 //        NSArray *group0 = @[item00,item01];
         
 //        GSYTableViewModel *item10 = [GSYTableViewModel tableWithIcon:@"IDInfo" title:@"111" vcClass:nil];
 //        GSYTableViewModel *item11 = [GSYTableViewModel tableWithIcon:@"IDInfo" title:@"111" vcClass:nil];
 
-        GSYTableViewCellModel *item10 = [GSYTableViewCellModel tableWithIcon:@"970309_" title:@"970329_" details:@"你画的画真好看！" vcClass:[TestViewController1 class]]; // 无箭头
-        GSYTableViewCellModel *item11 = [GSYTableViewCellModel tableWithIcon:@"970310_" title:@"970328_" details:@"请问iOS抖动动画是怎么实现的呢？" vcClass:[TestViewController1 class]];
-        GSYTableViewCellModel *item12 = [GSYTableViewCellModel tableWithIcon:@"970308_" title:@"970328_" details:@"请问JSP数据传递是怎么实现的呢？" vcClass:[TestViewController1 class]];
+        GSYTableViewCellModel *item10 = [GSYTableViewCellModel tableWithIcon:@"970309_" title:@"970329_" details:@"你画的画真好看！" vcClass:nil]; // 无箭头
+        GSYTableViewCellModel *item11 = [GSYTableViewCellModel tableWithIcon:@"970310_" title:@"970328_" details:@"请问iOS抖动动画是怎么实现的呢？" vcClass:nil];
+        GSYTableViewCellModel *item12 = [GSYTableViewCellModel tableWithIcon:@"970308_" title:@"970328_" details:@"请问JSP数据传递是怎么实现的呢？" vcClass:nil];
         NSArray *group1 = @[item00,item01,item10,item11,item12];
         
 //        [_data addObject:group0];

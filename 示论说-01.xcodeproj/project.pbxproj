@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E403AD76206DFAE100B7EDC9 /* waterClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E403AD74206DFAE100B7EDC9 /* waterClickViewController.m */; };
+		E403AD77206DFAE100B7EDC9 /* waterClickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E403AD75206DFAE100B7EDC9 /* waterClickViewController.xib */; };
+		E403AD7C206E55A200B7EDC9 /* zuopinxiangqing.plist in Resources */ = {isa = PBXBuildFile; fileRef = E403AD7B206E55A200B7EDC9 /* zuopinxiangqing.plist */; };
 		E4104FDF1F1C622700056194 /* GSYTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4104FDE1F1C622700056194 /* GSYTableViewCellModel.m */; };
 		E4104FE21F1C8D1900056194 /* GSYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4104FE11F1C8D1900056194 /* GSYNavigationController.m */; };
 		E4104FE71F1DBA8700056194 /* GSYSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4104FE61F1DBA8700056194 /* GSYSendViewController.m */; };
@@ -114,6 +117,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E403AD73206DFAE100B7EDC9 /* waterClickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = waterClickViewController.h; sourceTree = "<group>"; };
+		E403AD74206DFAE100B7EDC9 /* waterClickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = waterClickViewController.m; sourceTree = "<group>"; };
+		E403AD75206DFAE100B7EDC9 /* waterClickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = waterClickViewController.xib; sourceTree = "<group>"; };
+		E403AD7B206E55A200B7EDC9 /* zuopinxiangqing.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zuopinxiangqing.plist; sourceTree = "<group>"; };
 		E4104FDD1F1C622700056194 /* GSYTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSYTableViewCellModel.h; sourceTree = "<group>"; };
 		E4104FDE1F1C622700056194 /* GSYTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSYTableViewCellModel.m; sourceTree = "<group>"; };
 		E4104FE01F1C8D1900056194 /* GSYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSYNavigationController.h; sourceTree = "<group>"; };
@@ -306,6 +313,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E403AD72206DFA9C00B7EDC9 /* waterClick */ = {
+			isa = PBXGroup;
+			children = (
+				E403AD73206DFAE100B7EDC9 /* waterClickViewController.h */,
+				E403AD74206DFAE100B7EDC9 /* waterClickViewController.m */,
+				E403AD75206DFAE100B7EDC9 /* waterClickViewController.xib */,
+				E403AD7B206E55A200B7EDC9 /* zuopinxiangqing.plist */,
+			);
+			name = waterClick;
+			sourceTree = "<group>";
+		};
 		E4104FE31F1DBA5F00056194 /* sendMessage */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +521,7 @@
 		E43E9C4D1F19E90100C867F7 /* 添加 */ = {
 			isa = PBXGroup;
 			children = (
+				E403AD72206DFA9C00B7EDC9 /* waterClick */,
 				E43E9C4E1F19E91000C867F7 /* 1.plist */,
 				E43E9C4F1F19E91000C867F7 /* ShopCollectionViewCell.h */,
 				E43E9C501F19E91000C867F7 /* ShopCollectionViewCell.m */,
@@ -848,6 +867,7 @@
 				TargetAttributes = {
 					E4F779F91EFE2E920074015F = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KKDX4826L6;
 						ProvisioningStyle = Automatic;
 					};
 					E4F77A121EFE2E920074015F = {
@@ -892,6 +912,8 @@
 				E43E9C561F19E91000C867F7 /* 1.plist in Resources */,
 				E4F77A0D1EFE2E920074015F /* LaunchScreen.storyboard in Resources */,
 				E44F35241F22F5CD00829AFD /* GSYSellCell.xib in Resources */,
+				E403AD77206DFAE100B7EDC9 /* waterClickViewController.xib in Resources */,
+				E403AD7C206E55A200B7EDC9 /* zuopinxiangqing.plist in Resources */,
 				E46570BF1F298827001C6478 /* GSYSendXibController.xib in Resources */,
 				E45B34771F29C26C001A4522 /* Launch Screen.storyboard in Resources */,
 				E43E9C5D1F1AFD0500C867F7 /* 2.plist in Resources */,
@@ -972,6 +994,7 @@
 				E43E9C5A1F19E91000C867F7 /* WaterflowLayout.m in Sources */,
 				E4F779FF1EFE2E920074015F /* main.m in Sources */,
 				E4458DB01F2868FC00D5EE96 /* GSYMiddleViewController.m in Sources */,
+				E403AD76206DFAE100B7EDC9 /* waterClickViewController.m in Sources */,
 				E43E9C491F19E8C100C867F7 /* UIImage+WebP.m in Sources */,
 				E43E9C3B1F19E8C100C867F7 /* UIScrollView+MJRefresh.m in Sources */,
 				E43E9C681F1B24C700C867F7 /* GSYTabBarButton.m in Sources */,
@@ -1144,9 +1167,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KKDX4826L6;
 				INFOPLIST_FILE = "示论说-01/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Song.----01";
+				PRODUCT_BUNDLE_IDENTIFIER = Song.justshow2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1155,9 +1179,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KKDX4826L6;
 				INFOPLIST_FILE = "示论说-01/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Song.----01";
+				PRODUCT_BUNDLE_IDENTIFIER = Song.justshow2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

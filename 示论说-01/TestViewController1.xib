@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController1">
             <connections>
+                <outlet property="img" destination="fqV-Xd-tAe" id="1Au-8o-AQh"/>
                 <outlet property="textLabel" destination="xGR-Re-RMg" id="ZOj-gl-GiD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -44,8 +45,21 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fqV-Xd-tAe">
+                    <rect key="frame" x="72" y="47" width="240" height="128"/>
+                    <color key="backgroundColor" red="1" green="0.20343050660000001" blue="0.1870244539" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="Cif-IF-Jgg"/>
+                        <constraint firstAttribute="width" constant="240" id="aHc-iQ-4NX"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.53471541020000002" green="1" blue="0.41401657130000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fqV-Xd-tAe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="G4E-zN-v30"/>
+                <constraint firstAttribute="trailing" secondItem="fqV-Xd-tAe" secondAttribute="trailing" constant="102" id="fBZ-0p-ELK"/>
+                <constraint firstItem="fqV-Xd-tAe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="xue-9K-VxB"/>
+            </constraints>
         </view>
     </objects>
 </document>

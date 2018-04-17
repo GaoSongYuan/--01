@@ -99,11 +99,11 @@
 }
 
 -(void)test {
-    UIViewController *vc = [[TestViewController1 alloc] init];
-    vc.title = @"用户信息";
-    GSYTabBarController *vcc = (GSYTabBarController *)self.tabBarController;
-    vcc.myTabBar.hidden = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[TestViewController1 alloc] init];
+//    vc.title = @"用户信息";
+//    GSYTabBarController *vcc = (GSYTabBarController *)self.tabBarController;
+//    vcc.myTabBar.hidden = YES;
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

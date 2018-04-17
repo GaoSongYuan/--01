@@ -7,10 +7,12 @@
 //
 
 #import "TestViewController1.h"
+#import "UIImageView+WebCache.h"
 
 @interface TestViewController1 ()
 - (IBAction)testClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *img;
 
 @end
 
@@ -18,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.img sd_setImageWithURL:[NSURL URLWithString:self.imgURL] placeholderImage:[UIImage imageNamed:@"IMG_1659"]];
 }
 
 

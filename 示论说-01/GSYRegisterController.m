@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
 @property (weak, nonatomic) IBOutlet UIButton *zhuce;
+- (IBAction)zhucebtnnew:(id)sender;
 
 @end
 
@@ -41,5 +42,13 @@
 
 -(void)textChange {
     self.zhuce.enabled = (self.school.text.length && self.stuNum.text.length && self.phoneNum.text.length && self.pwd.text.length);
+}
+- (IBAction)zhucebtnnew:(id)sender {
+    
+    [self.school endEditing:YES];
+    [self.stuNum endEditing:YES];
+    [self.phoneNum endEditing:YES];
+    [self.pwd endEditing:YES];
+    
 }
 @end
